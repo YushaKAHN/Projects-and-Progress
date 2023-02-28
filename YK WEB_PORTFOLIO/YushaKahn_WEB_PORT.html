@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yusha Kahn Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="home">
+        <header>
+        
+                <img src="orangutanWP.png" class="logo">
+            <ul id="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#more">MORE</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+              
+            </ul>
+        </header>
+
+       
+        <div class="Homepage">
+            
+                <h2> Hi i am Yusha <span>Kahn</span></h2>
+                <p>
+                    This is my official Portfolio website to showcase my works related to web development and design skills.
+                </p>
+        </div>       
+
+      
+        
+
+        
+
+
+
+    </section>
+
+
+
+    <section id="about">
+        
+        <div class="AboutME">
+            <img src="monkey_codingWP.png" alt="">
+        </div>
+        
+        <div class="textbox">
+                <h2> ABOUT ME </h2>
+            <p>
+                <b> Hello world ! , i am a individual who has a passion for coding and a drive to develop their skills in the field. I have  embarked on a journey of self-improvement and exploration, seeking out new challenges and opportunities to learn and grow.
+                    Through my dedication and perseverance, i have made a great stride in my  coding abilities, learning  languages such as Python and C# all under the mentorship of @Younglings.africa- YK
+                </b>
+            </p>
+
+        </div>
+           
+        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </section>
+    <section id="more">
+    
+            <div class="MDpic">
+                 <img src="Yusha_photo-removebg-preview (1).png">
+            </div>
+
+
+            <div class="text2">
+                    
+                <h1>More about me , and why my spirit animal is an orangutang:</h1>
+            
+            
+                <p>
+                   <b>  A great interpretation of the symbolism of an orangutan. In addition to representing independence and self-reliance, the orangutan's long arms can indeed be seen as a symbol of reaching out to others and offering a helping hand. 
+                        Orangutans have been observed engaging in cooperative behaviours, such as sharing food and grooming each other. They are also known for their gentle and empathetic nature, and have been observed comforting others who are distressed. As such, if you feel drawn to the orangutan as your spirit animal, it may be because you value compassion, kindness, and cooperation with others.
+                    </b> 
+                </p>
+            
+            
+            </div>
+
+           
+            
+    
+    
+    
+    
+    
+    
+    
+    </section>
+
+    <section id="contact">
+    
+        <div class="contact-box">
+
+            
+            <form  onsubmit="sendEmail()";reset();return false;>
+                <input type="text" class="input-field" placeholder="Enter your Name:">
+
+                <input type="number" class="input-field" placeholder="Enter your Cell No:">
+
+                <input type="email" class="input-field" placeholder="Enter your Email:">
+
+                
+                <textarea type="text" class="input-field" placeholder="Your message " placeholder="Your message:"></textarea>
+                    
+                
+                <button type="submit" >Send Message</button>
+            </form>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                
+                <script>
+                function sendEmail(){
+                    Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "yusha.kahn@younglings.africa",
+                    Password : "Password",
+                    To : 'yusha.kahn@younglings.africa',
+                    From : document.getElementById("email").vale,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+                    }
+
+                </script>
+
+
+           
+    
+        
+
+
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+            
+    
+        <div class="social">
+
+            <a href="https://www.linkedin.com/in/yusha-kahn-110a57259/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    </section>
+
+    <section id="Video">
+       
+       
+    
+
+            
+        
+
+
+    </section>
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
