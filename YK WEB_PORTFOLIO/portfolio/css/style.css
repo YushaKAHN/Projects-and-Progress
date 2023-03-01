@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+   
+}
+       
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+   
+}
+header img{
+    height: 120px;
+    width: 120px;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#Home{
+   background-image: url(/images/back.png);
+
+}
+
+#about{
+     background-color: #F4E600;
+}
+
+#more{
+     background-color: #F4E600;
+}
+
+#contact{
+     background-color: #F4E600;
+}
+
+
+.Homepage{
+    height: fit-content;
+    width: fit-content;
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 29%;
+    border: 15px lightgrey;
+    padding: 20px;
+    background-color:lightgray;
+    text-align: justify;
+    
+   
+    
+}
+span{
+    color: orange;
+    
+}
+.textbox{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 25%;
+    margin-top: 25%;
+    border: 30px;
+    padding: 20px;
+    width: 400px;
+    text-align: justify;
+   
+    
+   
+}
+
+
+.AboutME img{
+    height: 910px;
+    width: 605px;
+    display: flexbox;
+    position: relative;
+    float: right;
+
+}
+.text2{
+    text-align: center;
+    padding: 20px;
+    float: right;
+    border: 50px;
+   
+    width: 450px;
+    text-align: justify;
+    margin-top: -30%;
+    margin-right: 150px;
+   
+}
+
+.mdpic img{
+    float:left;
+    display: flexbox;
+    position: relative;
+    margin-top: -20%;
+    height: max-content;
+  
+
+}
+.contact-box{
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0 0 20px 0 #999;
+    background-color :#F4E600 ;
+    
+
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.social{
+    margin-top: 700px;
+    margin-left: 570px;
+   
+}
+
+
+
+
+
