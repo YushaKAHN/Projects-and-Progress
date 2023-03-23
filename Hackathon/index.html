@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wizone</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <section id="home">
+      <header>
+        <a href="home"><img src="images/logo.png" alt="" /></a>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Information</a></li>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#contact">####</a></li>
+        </ul>
+      </header>
+    </section>
+
+    <section id="about">
+      <div class="inner-section">
+        <p class="text">
+          Cape Town, like many cities around the world, has been experiencing
+          the effects of overpopulation in recent years. The city's population
+          has been growing rapidly due to a combination of factors, including
+          immigration, rural-urban migration, and natural population growth
+        </p>
+
+        <div class="vision">
+          <button>Future Foresight</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="Service">
+      <div class="slider-cs"></div>
+    </section>
+    <section id="registration">
+      <!-- registration Page -->
+      <form id="msform">
+        <ul id="progressbar">
+          <li class="active">Account Setup</li>
+          <li>Personal Details</li>
+          <li>Social Profiles</li>
+        </ul>
+
+        <fieldset>
+          <h2 class="fs-title">Create your account</h2>
+          <h3 class="fs-subtitle">
+            Please share your email address and choose passwrod
+          </h3>
+          <input type="email" name="email" placeholder="Email" id="email" />
+          <input type="password" name="pass" placeholder="Password" />
+          <input type="password" name="cpass" placeholder="Confirm Password" />
+          <input type="text" name="cpass" placeholder="Zip Code" />
+          <input
+            type="button"
+            name="next"
+            class="next action-button"
+            value="Next"
+          />
+        </fieldset>
+
+        <fieldset>
+          <h2 class="fs-title">Personal Details</h2>
+          <h3 class="fs-subtitle">
+            Please share your personal details we will never share it with
+            anyone
+          </h3>
+          <input type="text" name="fname" placeholder="First Name" />
+          <input type="text" name="lname" placeholder="Last Name" />
+          <input type="text" name="phone" placeholder="Phone" />
+          <textarea name="address" placeholder="Address"></textarea>
+
+          <input
+            type="button"
+            name="previous"
+            class="previous action-button"
+            value="Previous"
+          />
+          <input
+            type="button"
+            name="next"
+            class="next action-button"
+            value="Next"
+          />
+        </fieldset>
+
+        <fieldset>
+          <h2 class="fs-title">Social Profiles</h2>
+          <h3 class="fs-subtitle">Please share your Social profile</h3>
+
+          <input type="text" name="twitter" placeholder="Twitter" />
+          <input type="text" name="facebook" placeholder="Facebook" />
+          <input type="text" name="gplus" placeholder="Google Plus" />
+          <input type="text" name="instagram" placeholder="Instagram" />
+          <input
+            type="button"
+            name="previous"
+            class="previous action-button"
+            value="Previous"
+          />
+          <input
+            type="submit"
+            name="submit"
+            class="submit action-button"
+            value="Submit"
+          />
+        </fieldset>
+      </form>
+      <!-- partial -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="/java/script.js"></script>
+    </section>
+    <section id="contact"><h1>This Is Contact</h1></section>
+  </body>
+</html>
