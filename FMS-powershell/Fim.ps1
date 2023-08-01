@@ -1,34 +1,35 @@
-﻿Function Calculate-File-Hash($filepath) {
-    $filehash = Get-FileHash -Path $filepath -Algorithm SHA512
+Function Calculate-File-Hash($filepath) {
+    $filehash = Get-FileHash -Path $filepath -Algorithm SHA512  
+                                                 # encryption , then storing text in baseline.txt
     return $filehash
-}cls
-
+}
 
 
 Function Erase-Baseline-If-Already-Exists() {
     $baselineExists = Test-Path -Path .\baseline.txt
-
+                                                            #baseline.txt = is a file to store the hash algorithms
     if ($baselineExists) {
-        # Delete it
+        # Delete it /if baseline.txtx exisits / ovewrites storage file
         Remove-Item -Path .\baseline.txt
     }
 }
-
-
+                                                            #interactive section /// 
+                                                               
+                                                                      
 Write-Host ""
 Write-Host "What would you like to do?"
 Write-Host ""
 Write-Host "    A) Collect new Baseline?"
 Write-Host "    B) Begin monitoring files with saved Baseline?"
 Write-Host ""
-$response = Read-Host -Prompt "Please enter 'A' or 'B'"
+$response = Read-Host -Prompt "Please enter 'A' or 'B'"          #options 
 Write-Host ""
 
 if ($response -eq "A".ToUpper()) {
     # Delete baseline.txt if it already exists
     Erase-Baseline-If-Already-Exists
 
-    # Calculate Hash from the target files and store in baseline.txt
+    # Calculate Hash from the target files and store in baseline.txt \\\\\\\\\\  BREAK DOWN SECTION > File Structure
     # Collect all files in the target folder
     $files = Get-ChildItem -Path .\Files
     
